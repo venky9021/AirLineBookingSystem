@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: aeroflow-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/aeroflow_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: venky9021
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  mail:
+    host: localhost
+    port: 25
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+
+# Custom properties for JWT and mail mock behaviors
+aeroflow:
+  jwt:
+    secret: 9a6563c3d2a6a1262d166827299a9cf3a890db67d8fca0fb839446f2c3d12f3e
+    expiration-ms: 86400000 # 24 Hours
+  mail:
+    sender: noreply@aeroflow.com
+    simulate: true # Set to true to log emails in console rather than failing due to missing SMTP server
