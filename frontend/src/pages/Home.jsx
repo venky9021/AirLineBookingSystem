@@ -50,7 +50,7 @@ export default function Home({ onSearch }) {
   const [searchType, setSearchType] = useState('one-way'); // 'one-way', 'round-trip'
   const [origin, setOrigin] = useState('Delhi (DEL)');
   const [destination, setDestination] = useState('Mumbai (BOM)');
-  const [date, setDate] = useState('2026-09-04');
+  const [date, setDate] = useState('2026-09-10');
   const [passengers, setPassengers] = useState(1);
   const [travelClass, setTravelClass] = useState('ECONOMY');
 
