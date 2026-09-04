@@ -59,8 +59,10 @@ public class SecurityConfig {
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/api/flights/search", "/api/flights/{id}").permitAll()
+                .requestMatchers("/api/flights/**").permitAll()
+                .requestMatchers("/api/airports/**").permitAll()
                 .requestMatchers("/api/checkin/**").permitAll()
+                .requestMatchers("/api/health").permitAll()
                 .requestMatchers("/api/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
             );
