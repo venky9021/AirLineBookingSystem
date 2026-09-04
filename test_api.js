@@ -57,7 +57,7 @@ const testApi = async () => {
 
     // 3. Domestic Indian Flight Search
     console.log('\n--- 3. Testing Indian Flight Search ---');
-    const searchRes = await fetch(`${baseUrl}/flights/search?origin=Delhi (DEL)&destination=Mumbai (BOM)&date=2026-06-01`, {
+    const searchRes = await fetch(`${baseUrl}/flights/search?origin=Delhi (DEL)&destination=Mumbai (BOM)&date=2026-09-04`, {
       headers
     });
     if (!searchRes.ok) throw new Error(`Search failed: ${searchRes.status}`);
