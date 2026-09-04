@@ -26,7 +26,7 @@ const RECOMMENDATIONS = [
     origin: 'Delhi (DEL)',
     destination: 'Jaipur (JAI)',
     price: '2,400',
-    image: 'https://images.unsplash.com/photo-1477584322813-43726b3135b7?w=500&auto=format&fit=crop&q=60'
+    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=500&auto=format&fit=crop&q=60'
   },
   {
     title: 'Kochi Palms',
@@ -87,7 +87,7 @@ export default function Home({ onSearch }) {
           </span>
         </h1>
         <p className="text-slate-600 text-sm sm:text-lg max-w-2xl mx-auto mt-4 font-semibold">
-          Experience clickable Indian gateway recommendations, real-time seat locks, and custom e-ticket invoices in a gorgeous yellow-ivory dashboard.
+          Search flights across India's top routes, book your seats instantly, and manage your journey — all in one place.
         </p>
       </div>
 
