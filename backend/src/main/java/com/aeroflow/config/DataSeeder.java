@@ -79,7 +79,7 @@ public class DataSeeder implements ApplicationRunner {
                             .arrivalTime(arrival)
                             .totalSeats(60)
                             .availableSeats(60)
-                            .basePrice(route.price)
+                            .basePrice(route.price())
                             .status("ACTIVE")
                             .build());
                     if (batch.size() >= 400) {
