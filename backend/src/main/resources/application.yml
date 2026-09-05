@@ -20,9 +20,11 @@ spring:
     hibernate:
       ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:update}
     show-sql: false
+    database-platform: org.hibernate.dialect.MySQLDialect
     properties:
       hibernate:
         format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
         jdbc:
           time_zone: UTC
 
